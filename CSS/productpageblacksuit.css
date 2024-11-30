@@ -1,0 +1,64 @@
+/* Glavna slika i thumbnail slike */
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.img-thumbnail {
+	width: 80px;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: border-color 0.3s;
+}
+
+.img-thumbnail:hover {
+	border-color: #000; /* Crna ivica pri hover efektu */
+}
+
+/* Logo efekat */
+.pulsing-logo {
+	animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Pozicija proizvoda */
+.container {
+	text-align: center;
+}
+
+/* Accordion Styling */
+.accordion-item {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.accordion-header button {
+	font-weight: bold;
+	color: #333;
+}
+
+.accordion-body {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #555;
+}
+
+.accordion-header button:focus {
+	box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: #f8f9fa; /* Light background when expanded */
+}

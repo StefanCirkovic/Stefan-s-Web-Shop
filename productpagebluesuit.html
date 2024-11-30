@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product Page</title>
+		<!-- Bootstrap CDN -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<!-- Font Awesome CDN -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="CSS/productpagebluesuit.css" />
+	</head>
+	<body>
+		<div class="container mt-5">
+			<!-- Navigacija -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<i
+							class="fa-brands fa-squarespace pulsing-logo"
+							style="font-size: 60px"
+						></i>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto gap-3">
+							<li class="nav-item">
+								<a
+									class="nav-link active text-black"
+									href="file:///C:/Users/stefan/OneDrive/Desktop/HTML%20&%20CSS/Domaci%2017/index.html#"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#">Store</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-black" href="#">Point Of Sale</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link text-black">
+									<i
+										class="fas fa-cart-shopping transition-transform transform-hover"
+										style="transition: transform 0.5s ease"
+									></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Sekcija proizvoda -->
+			<div class="row mt-5">
+				<!-- Sekcija sa slikama -->
+				<div class="col-md-6">
+					<!-- Glavna slika -->
+					<div class="mb-3">
+						<img
+							src="https://cdn.pixabay.com/photo/2017/08/27/05/33/suit-2685226_1280.jpg"
+							alt="Glavna slika"
+							class="img-fluid rounded"
+						/>
+					</div>
+					<!-- Male slike -->
+					<div class="d-flex justify-content-start gap-2">
+						<img
+							src="https://cdn.pixabay.com/photo/2017/08/27/05/33/suit-2685226_1280.jpg"
+							alt="Mala slika 1"
+							class="img-thumbnail"
+						/>
+						<img
+							src="https://cdn.pixabay.com/photo/2017/08/27/05/33/suit-2685227_1280.jpg"
+							alt="Mala slika 2"
+							class="img-thumbnail"
+						/>
+						<img
+							src="https://cdn.pixabay.com/photo/2017/08/28/02/58/suit-2688313_640.jpg"
+							alt="Mala slika 3"
+							class="img-thumbnail"
+						/>
+						<img
+							src="https://cdn.pixabay.com/photo/2017/08/28/02/58/suit-2688314_640.jpg"
+							alt="Mala slika 4"
+							class="img-thumbnail"
+						/>
+					</div>
+				</div>
+
+				<!-- Sekcija sa opisom -->
+				<div class="col-md-6">
+					<h5 class="text-uppercase">Tom Ford</h5>
+					<h3>Tom Ford Blue Suit</h3>
+					<p>
+						<span class="fs-4 text-success fw-bold">450&dollar;</span>
+					</p>
+					<p>
+						Elevate your wardrobe with this timeless Tom Ford blue suit, crafted
+						for the ultimate sophistication. Featuring a tailored fit and
+						luxurious materials, it offers a sleek and elegant look for formal
+						occasions.
+					</p>
+					<div class="mb-3">
+						<h6>Colour:</h6>
+						<span class="badge bg-secondary">Blue</span>
+					</div>
+					<div class="mb-3">
+						<h6>Size:</h6>
+						<div class="btn-group" role="group">
+							<button type="button" class="btn btn-outline-dark">S</button>
+							<button type="button" class="btn btn-outline-dark">M</button>
+							<button type="button" class="btn btn-outline-dark">L</button>
+							<button type="button" class="btn btn-outline-dark">XL</button>
+						</div>
+					</div>
+					<div class="mb-3">
+						<button class="btn btn-success w-100">Add to Cart</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Accordion for Product Details -->
+			<div class="accordion mt-5" id="productDetailsAccordion">
+				<!-- First Accordion Item - Product Details -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="detailsHeading">
+						<button
+							class="accordion-button"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#detailsCollapse"
+							aria-expanded="true"
+							aria-controls="detailsCollapse"
+							style="color: green"
+						>
+							Product Details
+						</button>
+					</h2>
+					<div
+						id="detailsCollapse"
+						class="accordion-collapse collapse show"
+						aria-labelledby="detailsHeading"
+						data-bs-parent="#productDetailsAccordion"
+					>
+						<div class="accordion-body">
+							Tom Ford Blue Suit - A Timeless Symbol of Elegance The Tom Ford
+							Blue Suit is the epitome of sophistication and style, designed for
+							those who appreciate the finer things in life. Crafted with
+							meticulous attention to detail, this suit is an essential addition
+							to any discerning wardrobe. Made from 100% premium wool, it offers
+							a luxurious, soft feel while maintaining an elegant, structured
+							silhouette. Whether you're attending a formal event, a wedding, or
+							a high-profile business meeting, this suit is designed to ensure
+							you look your absolute best. Tailored Fit for the Perfect
+							Silhouette What sets the Tom Ford Blue Suit apart is its tailored
+							fit. The suit has been expertly crafted to hug the body’s natural
+							lines, providing a sharp, clean look that is both timeless and
+							modern. It creates an impeccable silhouette, adding a layer of
+							refinement to your appearance. The suit’s cut is designed to
+							flatter any body type, ensuring a polished and sleek look that
+							enhances your natural proportions. Luxurious Fabric for Ultimate
+							Comfort Crafted from 100% wool, this suit offers both durability
+							and breathability. Wool is renowned for its natural ability to
+							regulate body temperature, keeping you cool and comfortable during
+							long events or formal gatherings. The fabric has a smooth texture
+							that gives the suit an ultra-premium feel, while also being
+							resilient enough to maintain its form after hours of wear. The
+							suit is lined with a silk blend that adds an extra touch of
+							luxury, ensuring a soft, smooth feel against the skin. Classic
+							Blue Color with Subtle Modern Touches The blue color of the Tom
+							Ford suit exudes sophistication and versatility. Blue is a classic
+							color for formalwear, offering timeless appeal that never goes out
+							of style. The sleek blue hue is complemented by a notch lapel,
+							giving the suit a refined, contemporary edge. Its classic color
+							makes it the ideal choice for a variety of occasions, from
+							weddings and galas to formal business events. Attention to Detail:
+							Closure, Pockets, and Lapels The single-breasted design features
+							two carefully placed buttons that add an extra layer of elegance.
+							This simple yet refined closure ensures a sleek, fitted look
+							without unnecessary fuss. The suit also features two side pockets
+							and one chest pocket, offering both style and functionality. The
+							pockets are designed with precision, adding a touch of
+							practicality to an otherwise luxurious garment. The lapels are a
+							key feature of the suit, with their notch design offering a
+							balance of tradition and contemporary flair. The double vent at
+							the back ensures comfort and ease of movement, allowing you to
+							move freely without sacrificing style. These thoughtful details
+							contribute to the overall refined appearance of the Tom Ford Blue
+							Suit, making it an investment in both quality and style. Made in
+							Italy – A Guarantee of Craftsmanship As with all Tom Ford
+							creations, this suit is crafted in Italy, a country renowned for
+							its centuries-old tailoring tradition. Made by highly skilled
+							artisans, each suit is carefully constructed to the highest
+							standards, ensuring durability, comfort, and exceptional
+							craftsmanship. The made-in-Italy origin guarantees that the Tom
+							Ford Blue Suit is a product of the finest quality. Versatile and
+							Timeless – A Wardrobe Essential The Tom Ford Blue Suit is designed
+							to fit seamlessly into any occasion, offering versatility for both
+							formal and semi-formal events. Its timeless design ensures it will
+							never go out of style, making it a wardrobe staple for years to
+							come. Available in sizes S, M, L, and XL, the suit is suitable for
+							various body types, allowing everyone to experience the luxury and
+							style of Tom Ford. Whether you're dressing for a wedding, an
+							important business meeting, or a night out at a formal event, the
+							Tom Ford Blue Suit provides you with the confidence and elegance
+							to stand out. With its impeccable craftsmanship, luxurious fabric,
+							and timeless design, this suit is an investment that you will
+							enjoy for many years.
+						</div>
+					</div>
+				</div>
+
+				<!-- Second Accordion Item - More Information -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="moreInfoHeading">
+						<button
+							class="accordion-button collapsed"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#moreInfoCollapse"
+							aria-expanded="false"
+							aria-controls="moreInfoCollapse"
+							style="color: green"
+						>
+							More Information
+						</button>
+					</h2>
+					<div
+						id="moreInfoCollapse"
+						class="accordion-collapse collapse"
+						aria-labelledby="moreInfoHeading"
+						data-bs-parent="#productDetailsAccordion"
+					>
+						<div class="accordion-body">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th scope="row">Brand</th>
+										<td>Tom Ford</td>
+									</tr>
+									<tr>
+										<th scope="row">Style</th>
+										<td>Blue Suit</td>
+									</tr>
+									<tr>
+										<th scope="row">Material</th>
+										<td>100% Wool</td>
+									</tr>
+									<tr>
+										<th scope="row">Lining</th>
+										<td>Silk Blend</td>
+									</tr>
+									<tr>
+										<th scope="row">Fit</th>
+										<td>Tailored Fit</td>
+									</tr>
+									<tr>
+										<th scope="row">Color</th>
+										<td>Blue</td>
+									</tr>
+									<tr>
+										<th scope="row">Care Instructions</th>
+										<td>Dry Clean Only</td>
+									</tr>
+									<tr>
+										<th scope="row">Country of Origin</th>
+										<td>Made in Italy</td>
+									</tr>
+									<tr>
+										<th scope="row">Closure</th>
+										<td>Single-breasted with two buttons</td>
+									</tr>
+									<tr>
+										<th scope="row">Pockets</th>
+										<td>Two side pockets and one chest pocket</td>
+									</tr>
+									<tr>
+										<th scope="row">Lapels</th>
+										<td>Notch lapels</td>
+									</tr>
+									<tr>
+										<th scope="row">Vent</th>
+										<td>Double vent at the back</td>
+									</tr>
+									<tr>
+										<th scope="row">Available Sizes</th>
+										<td>S, M, L, XL</td>
+									</tr>
+									<tr>
+										<th scope="row">Occasion</th>
+										<td>
+											Formal, Weddings, Business Events, Special Occasions
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer
+			class="text-white pt-5 pb-3"
+			style="
+				background-image: url('https://cdn.pixabay.com/photo/2016/11/29/04/15/fence-1868503_1280.jpg');
+				background-size: cover;
+				background-position: center;
+				background-color: black;
+			"
+		>
+			<div class="container">
+				<div class="row">
+					<!-- Kontakt informacije -->
+					<div class="col-lg-4 col-md-6 mb-4">
+						<h5>Contact Us</h5>
+						<p>Email: support@newbrand.com</p>
+						<p>Phone: +123 456 789</p>
+						<p>Address: 123 Winston Churchill, London</p>
+					</div>
+
+					<!-- Korisnička podrška -->
+					<div class="col-lg-4 col-md-6 mb-4">
+						<h5>Customer Support</h5>
+						<ul class="list-unstyled">
+							<li><a href="#" class="text-white">FAQ</a></li>
+							<li><a href="#" class="text-white">Contact Us</a></li>
+							<li><a href="#" class="text-white">Return Policy</a></li>
+							<li><a href="#" class="text-white">Terms & Conditions</a></li>
+						</ul>
+					</div>
+
+					<!-- Newsletter i društvene mreže -->
+					<div class="col-lg-4 col-md-6 mb-4">
+						<h5>Subscribe</h5>
+						<form class="d-flex flex-column">
+							<input
+								type="email"
+								class="form-control mb-3"
+								placeholder="Your email"
+							/>
+							<button class="btn btn-success rounded-pill">Subscribe</button>
+						</form>
+
+						<h5 class="mt-4">Follow Us</h5>
+						<div>
+							<a href="#" class="text-white mr-3" style="text-decoration: none">
+								<i class="fab fa-facebook"></i>
+							</a>
+							<a href="#" class="text-white mr-3" style="text-decoration: none">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="#" class="text-white mr-3" style="text-decoration: none">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a href="#" class="text-white" style="text-decoration: none">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Bottom -->
+			<div class="text-center py-3">
+				<p>&copy; 2024 New Brand. All Rights Reserved.</p>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
